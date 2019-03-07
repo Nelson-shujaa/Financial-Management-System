@@ -1,0 +1,59 @@
+
+body {
+  background-image: url('../photos/signup.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.cont{
+  margin-top: 15em;
+}
+h1{
+  margin-left: 12em;
+  font-size: 4em;
+}
+h2{
+  margin-left: 14em;
+  font-size: 3em;
+}
+button:hover{
+ text-transform: uppercase;
+ color: white;
+}
+.buttons{
+  display: inline-flex;
+  margin-left: 32em;
+  margin-top: 10em;
+}
+button{
+  width: 20em;
+  height: 4em;
+  margin-right: 27em;
+}
+a{
+  color: white;
+}
+.modal{
+  color: black;
+}
+.inner-addon {
+  position: relative;
+  margin-top: 3em;
+}
+
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+  margin: 2px solid black;
+}
+.left-addon .glyphicon  { left:  0px;}
+.left-addon  { padding-left:  30px; }
+}
+#bio,
+#username,
+#image{
+  margin-left: 1em;
+  width: 20em;
+}

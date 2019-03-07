@@ -108,18 +108,3 @@ window.chartColors = {
 	}
 
 });
-
- // const CHART=document.getElementById('canvas2');
- // var canvas2 = new chart(CHART,{
-	//  type: "line"
-	//  data:{
-	// 	 labels:['Jan','Feb','May'],
-	// 	 datasets:[{
-	// 		 backgroundColor:["#020A5B", "#202020"],
-	// 		 borderColor: window.chartColors.red,
-	// 		 data:[8999,90000,909090,],
-	// 		 fill:false;
- //
-	// 	 }]
-	//  }
- // })
