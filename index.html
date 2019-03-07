@@ -1,14 +1,82 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>FMS</title>
-  </head>
-  <body>
-    <h1>Financial Management System</h1>
 
-  </body>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <title>FMS</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Financial Management System</h1>
+    <h2>Data input</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <form id="f1">
+          <div class="well">
+            <button type="button" class="btn btn-primary" id="bnt1">Expenditure</button>
+            <div class="inputs1">
+              <div id="one">
+                <div class="form-group">
+                  <h3>Categories:</h3>
+                  <select name="Expenditure" id="expenditure">
+                    <option value="Clothes">Clothes</option>
+                    <option value="Eating Out">Eating Out</option>
+                    <option value="Fuel">Fuel</option>
+                    <option value="Gifts">Gifts</option>
+                    <option value="Holidays">Holidays</option>
+                    <option value="Kids">Kids</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Savings">Savings</option>
+                  </select>
+                </div>
+                <input type="number" class="form-control" id="expenditure" placeholder="Amount (Ksh)">
+                <input id="date" class="form-control" type="date" required>
+              </div>
+              <br> <button type="button" class="btn btn-primary" id="expenditure-submit">Submit</button>
+              <br> <button type="button" class="btn btn-primary" id="new-category">Add Categories</button>
+              <input type="text" class="form-control" id="new" placeholder="Add Categories">
+              <button type="button" class="btn btn-primary" id="add">Add</button>
+            </div>
+        </form>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <form id="f2">
+        <div class="well">
+          <button type="button" class="btn btn-primary" id="bnt2">Income</button>
+          <div class="inputs2">
+            <div id="two">
+              <div class="form-group">
+                <h3>Categories:</h3>
+                <select name="Income" id="income">
+                  <option value="Salary">Salary</option>
+                  <option value="Gifts">Gifts</option>
+                  <option value="Loans">Loans</option>
+                  <option value="Allowances">Allowances</option>
+                  <option value="Wages">Wages</option>
+                  <option value="Commissions">Commissions</option>
+                </select>
+              </div>
+              <input type="number" class="form-control" id="income" placeholder="Amount (Ksh)">
+              <input id="date" class="form-control" type="date" required>
+            </div>
+            <br> <button type="button" class="btn btn-primary" id="income-submit">Submit</button>
+            <br> <button type="button" class="btn btn-primary" id="new-category2">Add Categories</button>
+            <input type="text" class="form-control" id="new2" placeholder="Add Categories">
+            <button type="button" class="btn btn-primary" id="add2">Add</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
 </html>
