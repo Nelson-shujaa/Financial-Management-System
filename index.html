@@ -8,48 +8,50 @@
   </head>
   <body>
     <div class="cont">
-      <h1>WELCOME TO FMS</h1>
-      <h2>(Financial Management System)</h2>
-      <div class="buttons">
-       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="signup">Sign Up</button>
-        <button type="button" class="btn btn-primary" id="login">Log In</button>
-      </div>
-      <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
+      <div class="container">
+        <h1>WELCOME TO FMS</h1>
+        <h2>(Financial Management System)</h2>
+        <div class="buttons">
+         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="signup">Sign Up</button>
+          <button type="button" class="btn btn-primary" id="login">Log In</button>
+        </div>
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
 
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3>Sign Up</h3>
-            </div>
-            <div class="modal-body">
-              <div class="inner-addon left-addon">
-                <i class="glyphicon glyphicon-user"></i>
-                <input type="text" class="form-control" placeholder="Enter your username" id="username" required>
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3>Sign Up</h3>
               </div>
-              <div class="inner-addon left-addon">
-                <i class="glyphicon glyphicon-envelope"></i>
-                <input type="text" class="form-control" placeholder="Enter your email address" id="bio">
+              <div class="modal-body">
+                <div class="inner-addon left-addon">
+                  <i class="glyphicon glyphicon-user"></i>
+                  <input type="text" class="form-control" placeholder="Enter your username" id="username" required>
+                </div>
+                <div class="inner-addon left-addon">
+                  <i class="glyphicon glyphicon-envelope"></i>
+                  <input type="text" class="form-control" placeholder="Enter your email address" id="bio">
+                </div>
+                <div class="inner-addon left-addon">
+                  <i class="glyphicon glyphicon-lock"></i>
+                  <input type="password" class="form-control" placeholder="Enter your password" id="bio">
+                </div>
+                <div class="inner-addon left-addon">
+                  <i class="glyphicon glyphicon-lock"></i>
+                  <input type="password" class="form-control" placeholder="Confirm your password" id="bio">
+                </div>
+                <div class="inner-addon left-addon">
+                  <i class="glyphicon glyphicon-picture"></i>
+                  <input type="text" class="form-control" placeholder="Enter your image url (optional)" id="image">
+                </div>
               </div>
-              <div class="inner-addon left-addon">
-                <i class="glyphicon glyphicon-lock"></i>
-                <input type="password" class="form-control" placeholder="Enter your password" id="bio">
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary"><a href="landing.html" id="final">Sign Up</a></button>
               </div>
-              <div class="inner-addon left-addon">
-                <i class="glyphicon glyphicon-lock"></i>
-                <input type="password" class="form-control" placeholder="Confirm your password" id="bio">
-              </div>
-              <div class="inner-addon left-addon">
-                <i class="glyphicon glyphicon-picture"></i>
-                <input type="text" class="form-control" placeholder="Enter your image url (optional)" id="image">
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary"><a href="landing.html" id="final">Sign Up</a></button>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
       <script src="js/sign-up.js" charset="utf-8"></script>
