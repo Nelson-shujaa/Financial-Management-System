@@ -1,0 +1,82 @@
+body {
+  background-color: #020A5B;
+  color: white;
+}
+
+.inputs1,
+.inputs2 {
+  color: black;
+  display: none;
+}
+
+#new,
+#add {
+  display: none;
+}
+
+#new {
+  width: 10em;
+}
+
+#one,
+#two {
+  display: flex;
+}
+
+#new2,
+#add2 {
+  display: none;
+}
+
+#new2 {
+  width: 10em;
+}
+
+h1 {
+  font-size: 5em;
+  margin-left: 0.7em;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-left: 11em;
+}
+
+.well {
+  height: 20em;
+  margin-top: 5em;
+  font-size: 1.5em;
+}
+
+input {
+  width: 7em;
+  margin-top: 3.9em;
+  margin-left: 1em;
+}
+
+.col-md-6 {
+  width: 40em;
+}
+
+.btn {
+  font-size: 0.8em;
+}
+
+#bnt1, #bnt2 {
+  width: 10em;
+  height: 2.5em;
+  font-size: 0.9em;
+}
+
+.form-group {}
+
+#new-category {
+  margin-top: 2em;
+  width: 10em;
+}
+
+#new-category2 {
+  margin-top: 2em;
+  width: 10em;
+}
