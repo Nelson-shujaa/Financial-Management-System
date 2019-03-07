@@ -2,6 +2,10 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link href="css/input.css" rel="stylesheet" type="text/css">
   <title>FMS</title>
@@ -9,74 +13,199 @@
 
 <body>
   <div class="container">
-    <h1>Financial Management System</h1>
-    <h2>Data input</h2>
-    <div class="row">
+    <div class="cont1">
+      <h1>Financial Management System</h1>
+      <h2>Data input</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="f1">
+            <div class="well">
+              <button type="button" class="btn btn-primary" id="bnt1">Expenditure</button>
+              <div class="inputs1">
+                <div id="one">
+                  <div class="form-group">
+                    <h3>Categories:</h3>
+                    <select name="Expenditure" id="expenditure">
+                      <option value="Clothes">Clothes</option>
+                      <option value="Eating Out">Eating Out</option>
+                      <option value="Fuel">Fuel</option>
+                      <option value="Gifts">Gifts</option>
+                      <option value="Holidays">Holidays</option>
+                      <option value="Kids">Kids</option>
+                      <option value="Shopping">Shopping</option>
+                      <option value="Sports">Sports</option>
+                      <option value="Travel">Travel</option>
+                      <option value="Savings">Savings</option>
+                    </select>
+                  </div>
+                  <input type="number" class="form-control" id="expenditure" placeholder="Amount (Ksh)">
+                  <input id="date" class="form-control" type="date" required>
+                </div>
+                <br> <button type="button" class="btn btn-primary" id="expenditure-submit">Submit</button>
+                <br> <button type="button" class="btn btn-primary" id="new-category">Add Categories</button>
+                <input type="text" class="form-control" id="new" placeholder="Add Categories">
+                <button type="button" class="btn btn-primary" id="add">Add</button>
+              </div>
+          </form>
+        </div>
+      </div>
       <div class="col-md-6">
-        <form id="f1">
+        <form id="f2">
           <div class="well">
-            <button type="button" class="btn btn-primary" id="bnt1">Expenditure</button>
-            <div class="inputs1">
-              <div id="one">
+            <button type="button" class="btn btn-primary" id="bnt2">Income</button>
+            <div class="inputs2">
+              <div id="two">
                 <div class="form-group">
                   <h3>Categories:</h3>
-                  <select name="Expenditure" id="expenditure">
-                    <option value="Clothes">Clothes</option>
-                    <option value="Eating Out">Eating Out</option>
-                    <option value="Fuel">Fuel</option>
+                  <select name="Income" id="income">
+                    <option value="Salary">Salary</option>
                     <option value="Gifts">Gifts</option>
-                    <option value="Holidays">Holidays</option>
-                    <option value="Kids">Kids</option>
-                    <option value="Shopping">Shopping</option>
-                    <option value="Sports">Sports</option>
-                    <option value="Travel">Travel</option>
-                    <option value="Savings">Savings</option>
+                    <option value="Loans">Loans</option>
+                    <option value="Allowances">Allowances</option>
+                    <option value="Wages">Wages</option>
+                    <option value="Commissions">Commissions</option>
                   </select>
                 </div>
-                <input type="number" class="form-control" id="expenditure" placeholder="Amount (Ksh)">
+                <input type="number" class="form-control" id="income" placeholder="Amount (Ksh)">
                 <input id="date" class="form-control" type="date" required>
               </div>
-              <br> <button type="button" class="btn btn-primary" id="expenditure-submit">Submit</button>
-              <br> <button type="button" class="btn btn-primary" id="new-category">Add Categories</button>
-              <input type="text" class="form-control" id="new" placeholder="Add Categories">
-              <button type="button" class="btn btn-primary" id="add">Add</button>
+              <br> <button type="button" class="btn btn-primary" id="income-submit">Submit</button>
+              <br> <button type="button" class="btn btn-primary" id="new-category2">Add Categories</button>
+              <input type="text" class="form-control" id="new2" placeholder="Add Categories">
+              <button type="button" class="btn btn-primary" id="add2">Add</button>
             </div>
+          </div>
         </form>
       </div>
     </div>
-    <div class="col-md-6">
-      <form id="f2">
-        <div class="well">
-          <button type="button" class="btn btn-primary" id="bnt2">Income</button>
-          <div class="inputs2">
-            <div id="two">
-              <div class="form-group">
-                <h3>Categories:</h3>
-                <select name="Income" id="income">
-                  <option value="Salary">Salary</option>
-                  <option value="Gifts">Gifts</option>
-                  <option value="Loans">Loans</option>
-                  <option value="Allowances">Allowances</option>
-                  <option value="Wages">Wages</option>
-                  <option value="Commissions">Commissions</option>
-                </select>
-              </div>
-              <input type="number" class="form-control" id="income" placeholder="Amount (Ksh)">
-              <input id="date" class="form-control" type="date" required>
-            </div>
-            <br> <button type="button" class="btn btn-primary" id="income-submit">Submit</button>
-            <br> <button type="button" class="btn btn-primary" id="new-category2">Add Categories</button>
-            <input type="text" class="form-control" id="new2" placeholder="Add Categories">
-            <button type="button" class="btn btn-primary" id="add2">Add</button>
-          </div>
-        </div>
-      </form>
     </div>
-  </div>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="js/input.js"></script>
+    <div class="cont">
+      <h1>FMS Report:</h1>
+     <table class="table table-bordered">
+       <thead>
+         <tr>
+           <th>Income</th>
+           <th>Amount:</th>
+
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>Salary:</td>
+           <td id="salary"><strong>Ksh: 1000</strong></td>
+         </tr>
+         <tr>
+           <td>Gifts:</td>
+           <td id="gifts"><strong>Ksh: 3000</strong></td>
+         </tr>
+         <tr>
+           <td>Allowances:</td>
+           <td id="allowances"><strong>Ksh: 3900</strong></td>
+         </tr>
+         <tr>
+           <td>wages:</td>
+           <td id="wages"><strong>Ksh: 2500</strong></td>
+         </tr>
+         <tr>
+           <td>commissions:</td>
+           <td id="commissions"><strong>Ksh: 3400</strong></td>
+         </tr>
+         <tr>
+           <td>Loans:</td>
+           <td id="Loans"><strong>Ksh: 1000</strong></td>
+         </tr>
+       </tbody>
+
+     </table>
+
+     <table class="table table-bordered">
+       <thead>
+
+         <tr>
+           <th>expenses</th>
+           <th>Amount:</th>
+
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>Clothes:</td>
+           <td id="clothes"><strong>Ksh: 1800</strong></td>
+         </tr>
+         <tr>
+           <td>Eating Out:</td>
+           <td id="eating out "><strong>Ksh: 3300</strong></td>
+         </tr>
+
+         <tr>
+           <td>Gifts:</td>
+           <td id="gifts"><strong>Ksh: 2200</strong></td>
+         </tr>
+         <tr>
+           <td>Shopping:</td>
+           <td id="shopping"><strong>Ksh: 1400</strong></td>
+         </tr>
+         <tr>
+           <td>Travel:</td>
+           <td id="travel"><strong>Ksh: 3900</strong></td>
+         </tr>
+         <tr>
+           <td>Savings:</td>
+           <td id="savings"><strong>Ksh: 3600</strong></td>
+         </tr>
+
+       </tbody>
+     </table>
+     <button type="button" class="btn btn-primary" id="analysis">View Analysis</button>
+   </div>
+   </div>
+   <div style="width:75%" class="chart">
+     <h1>FMS Data analysis for: 2019</h1>
+     <canvas id="canvas"></canvas>
+   </div>
+
+<script>
+  var config = {
+    type: 'line',
+    data: {
+      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+      datasets: [{
+        label: 'Expenditure',
+        backgroundColor: window.chartColors.red,
+        borderColor: window.chartColors.red,
+        data: [1000, 3000, 3900, 2000, 2500, 3400, 1000],
+        fill: false,
+      }, {
+        label: 'Income',
+        fill: false,
+        backgroundColor: window.chartColors.blue,
+        borderColor: window.chartColors.blue,
+        data: [1800, 3300, 2200, 1900, 1100, 3900, 3000],
+      }]
+    },
+    options: {
+      responsive: true,
+      title: {
+        display: true,
+        text: 'Min and Max Settings'
+      },
+      scales: {
+        yAxes: [{
+          ticks: {
+            suggestedMin: 100,
+            suggestedMax: 5000,
+          }
+        }]
+      }
+    }
+  };
+  window.onload = function() {
+    var ctx = document.getElementById('canvas').getContext('2d');
+    window.myLine = new Chart(ctx, config);
+  };
+</script>
+
+
 </body>
 
 </html>

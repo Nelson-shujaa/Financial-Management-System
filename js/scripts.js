@@ -106,5 +106,85 @@ window.chartColors = {
 		ga('create', 'UA-28909194-3', 'auto');
 		ga('send', 'pageview');
 	}
-
+});
+$(document).ready(function() {
+  $("button#bnt1").click(function() {
+    $("div.inputs1").toggle(1000);
+    $("div.inputs2").hide(1000);
+  });
+  $("button#bnt2").click(function() {
+    $("div.inputs2").toggle(1000);
+    $("div.inputs1").hide(1000);
+  });
+  $("button#income-submit").click(function() {
+		var income= document.getElementById("income");
+		var i = income.options[income.selectedIndex].value;
+		var money=$("input#income").val();
+		if (i=="Salary") {
+ 		$("td#salary").append(money);
+		console.log(money)
+		}
+		else if(i=="Gifts"){
+			$("td#gifts").append(money);
+		}
+		else if(i=="Loans"){
+			$("td#loans").append(money);
+		}
+		else if(i=="Allowances"){
+			$("td#allowances").append(money);
+		}
+		else if(i=="Wages"){
+			$("td#wages").append(money);
+		}
+		else {
+			$("td#commissions").append(money);
+		}
+		$("div.cont1").hide();
+		$("div.cont").toggle(1000);
+		$("input#income").val('');
+  });
+  $("button#expenditure-submit").click(function() {
+    $("input#expenditure").val('')
+  });
+  $("button#expenditure-submit").click(function() {
+    $("input#date").val('');
+		$("div.cont1").hide();
+		$("div.cont").toggle(1000);
+  });
+  $("button#new-category").click(function() {
+    $('div#one').hide();
+    $('button#expenditure-submit').hide();
+    $('input#new').toggle(1000);
+    $("button#new-category").hide();
+    $("button#add").toggle(1000);
+  });
+  $("button#add").click(function() {
+    var newCategory = $("input#new").val();
+    $("select#expenditure").append("<option value='" + newCategory + "'>" + newCategory + "</option>");
+    $("div#one").toggle(1000);
+    $("button#add").hide();
+    $('button#expenditure-submit').toggle(1000);
+    $("button#new-category").toggle(1000);
+    $('input#new').hide();
+  });
+  $("button#new-category2").click(function() {
+    $('div#two').hide();
+    $('button#income-submit').hide();
+    $('input#new2').toggle(1000);
+    $("button#new-category2").hide();
+    $("button#add2").toggle(1000);
+  });
+  $("button#add2").click(function() {
+    var newCategory2 = $("input#new2").val();
+    $("select#income").append("<option value='" + newCategory2 + "'>" + newCategory2 + "</option>");
+    $("div#two").toggle(1000);
+    $("button#add2").hide();
+    $('button#income-submit').toggle(1000);
+    $("button#new-category2").toggle(1000);
+    $('input#new2').hide();
+  });
+	$("button#analysis").click(function(){
+		$("div.cont").hide();
+		$("div.chart").show();
+	});
 });
