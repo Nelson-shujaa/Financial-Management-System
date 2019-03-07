@@ -10,11 +10,11 @@ body {
   margin-top: 15em;
 }
 h1{
-  margin-left: 12em;
+  margin-left: 5em;
   font-size: 4em;
 }
 h2{
-  margin-left: 14em;
+  margin-left: 4em;
   font-size: 3em;
 }
 button:hover{
@@ -23,13 +23,13 @@ button:hover{
 }
 .buttons{
   display: inline-flex;
-  margin-left: 32em;
+  margin-left: 8em;
   margin-top: 10em;
 }
 button{
   width: 20em;
   height: 4em;
-  margin-right: 27em;
+  margin-right: 15em;
 }
 a{
   color: white;
