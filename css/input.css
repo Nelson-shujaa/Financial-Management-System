@@ -20,8 +20,8 @@ margin-left: 15em;
   margin-left: 6em;
 }
 #analysis{
-  width: 13em;
-  height: 3em;
+  width: 8em;
+  height: 2em;
   font-size: 1.5em;
   margin-left: 18em;
 }
@@ -69,20 +69,20 @@ a:hover{
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3em;
   margin-left: 3em;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
   margin-left: 11em;
 }
 
 .well {
-  height: 15em;
+  height: 20em;
   margin-top: 5em;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 input {
